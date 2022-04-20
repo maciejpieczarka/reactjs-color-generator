@@ -1,0 +1,5 @@
+.generator {
+  background: radial-gradient(50% 50% at 50% 50%, #2c375c 0%, #2c3246 100%);
+  width: 100%;
+  min-height: 100vh;
+}

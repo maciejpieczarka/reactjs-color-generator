@@ -1,0 +1,25 @@
+footer {
+  width: 100%;
+}
+
+footer > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-media-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.link {
+  font-size: 3.2rem;
+  line-height: 100%;
+}
+
+.copyrights {
+  font-size: 1.6rem;
+}

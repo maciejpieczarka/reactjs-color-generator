@@ -1,0 +1,34 @@
+.card-container {
+  width: 100%;
+  display: flex;
+  gap: 5%;
+  height: 30rem;
+  margin: 7rem 0;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.generate-btn {
+  background: linear-gradient(157.79deg, #50a8ea 38.28%, #ffffff 228.74%);
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.5rem 6rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.generate-description {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 300;
+}

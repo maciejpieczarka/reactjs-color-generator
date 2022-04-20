@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 300ms ease;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.color-box {
+  height: 85%;
+  border-radius: 0.6rem;
+}
+
+.hex-box {
+  color: #2c3246;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  height: 15%;
+  text-transform: uppercase;
+}
