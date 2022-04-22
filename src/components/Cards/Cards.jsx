@@ -9,8 +9,8 @@ const Cards = () => {
 
   useEffect(() => {
     setColors(HexProvider);
-    window.addEventListener("keydown", (e) => {
-      if (e.key === " ") {
+    window.addEventListener("keyup", (e) => {
+      if (e.key === " " || e.code == "Space") {
         setColors(HexProvider);
       }
     });
@@ -18,12 +18,22 @@ const Cards = () => {
 
   return (
     <>
+      <div className="button-container mobile">
+        <button
+          className="generate-btn"
+          onClick={() => {
+            setColors(HexProvider);
+          }}
+        >
+          Generate
+        </button>
+      </div>
       <div className="card-container">
         {colors.map((color) => (
           <Card color={color} key={color} />
         ))}
       </div>
-      <div className="button-container">
+      <div className="button-container desktop">
         <button
           className="generate-btn"
           onClick={() => {

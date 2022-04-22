@@ -2,4 +2,54 @@
   background: radial-gradient(50% 50% at 50% 50%, #2c375c 0%, #2c3246 100%);
   width: 100%;
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.absoluteImg {
+  position: absolute;
+  z-index: 0;
+  opacity: 5%;
+  filter: blur(0.6rem);
+}
+
+.pencilImg {
+  height: auto;
+  width: 40rem;
+  bottom: -10rem;
+  right: 20rem;
+  transform: rotate(-90deg);
+}
+
+.paletteImg {
+  height: auto;
+  width: 100rem;
+  top: 0rem;
+  left: 10rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .pencilImg {
+    right: 5rem;
+  }
+
+  .paletteImg {
+    width: 80rem;
+    left: 5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .paletteImg {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .paletteImg {
+    /* width: 50rem; */
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5rem;
+  }
 }

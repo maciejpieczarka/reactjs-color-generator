@@ -2,7 +2,6 @@
   width: 100%;
   display: flex;
   align-items: center;
-  /* border: 1px solid yellow; */
 }
 
 .title-box > .line {
@@ -12,7 +11,7 @@
   border-radius: 1rem;
 }
 
-.title-box > .text-box {
+.text-box {
   padding: 0 12rem;
   text-align: center;
 }
@@ -31,4 +30,35 @@
 .title-description {
   text-align: right;
   font-weight: 300;
+}
+
+@media screen and (max-width: 1400px) {
+  .text-box {
+    padding: 0 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title-box,
+  .title-heading,
+  .title-description {
+    text-align: center;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .title-box {
+    justify-content: center;
+  }
+
+  .title-heading {
+    /* font-size: 2rem; */
+    font-weight: 700;
+  }
+
+  .title-description {
+    font-size: 1rem;
+  }
 }

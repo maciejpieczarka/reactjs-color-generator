@@ -28,7 +28,7 @@ ol {
 
 .container {
   margin: auto;
-  max-width: 80%;
+  max-width: 90%;
   padding: 1rem 2rem;
 }
 
@@ -38,4 +38,10 @@ ol {
 
 .dev {
   border: 1px solid red;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
 }

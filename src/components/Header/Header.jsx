@@ -9,7 +9,11 @@ const Header = () => {
     <header>
       <div className="container">
         {/* Logo */}
-        <a href="/">
+        <a
+          href="https://maciejpieczarka.github.io/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={Logo} alt="Logo-Img" className="logo" />
         </a>
 
@@ -17,10 +21,20 @@ const Header = () => {
         <nav>
           <ul className="nav-list">
             <li className="nav-item">
-              <a href="/">My Portfolio</a>
+              <a
+                href="https://maciejpieczarka.github.io/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                My Portfolio
+              </a>
             </li>
             <li className="nav-item">
-              <a href="/">
+              <a
+                href="https://ko-fi.com/pieczareq"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="nav-btn">Support Me</button>
               </a>
             </li>
