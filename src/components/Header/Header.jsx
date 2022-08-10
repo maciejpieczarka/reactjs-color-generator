@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Logo from "../../assets/images/Logo.svg";
 import { MenuIcon } from "@heroicons/react/solid";
+import { XIcon } from "@heroicons/react/solid";
 import "./header.css";
 
 const Header = () => {
+  const [navActive, setNavActive] = useState(false);
+
+  const openNav = () => {
+    setNavActive(!navActive);
+  };
+
   return (
-    <header>
+    <header className={navActive ? "active" : ""}>
       <div className="container">
         {/* Logo */}
         <a
@@ -42,7 +49,8 @@ const Header = () => {
         </nav>
 
         {/* Hamburger icon */}
-        <MenuIcon className="hamburger-icon" />
+        <MenuIcon className="hamburger-icon open" onClick={openNav} />
+        <XIcon className="hamburger-icon close" onClick={openNav} />
       </div>
     </header>
   );

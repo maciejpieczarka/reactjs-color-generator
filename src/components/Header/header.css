@@ -2,6 +2,7 @@ header {
   width: 100%;
   position: relative;
   z-index: 10;
+  transition: all 300ms ease;
 }
 
 header > .container {
@@ -54,4 +55,62 @@ header > .container {
   width: 4rem;
   height: 4rem;
   display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    width: 5rem;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .open {
+    display: block;
+  }
+
+  header.active {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1d202bf6;
+  }
+
+  header.active .nav-list {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+  }
+
+  header.active .open {
+    display: none;
+  }
+
+  header.active .close {
+    display: block;
+  }
+
+  .nav-item a,
+  .nav-btn {
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all 300ms ease;
+  }
+
+  .nav-btn {
+    padding: 1rem 4rem;
+  }
 }

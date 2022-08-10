@@ -3,4 +3,11 @@
   margin: 8rem 0;
   position: relative;
   z-index: 10;
+  /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 1400px) {
+  .palette {
+    margin: 6rem 0;
+  }
 }

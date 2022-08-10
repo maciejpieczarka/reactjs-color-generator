@@ -31,3 +31,14 @@ footer > .container {
 .copyrights {
   font-size: 1.6rem;
 }
+
+@media screen and (max-width: 768px) {
+  .link {
+    font-size: 2rem;
+  }
+
+  .copyrights {
+    text-align: center;
+    /* border: 1px solid red; */
+  }
+}

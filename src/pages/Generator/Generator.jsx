@@ -1,4 +1,5 @@
-import React from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import Header from "../../components/Header/Header";
 import Palette from "../../components/Palette/Palette";
@@ -9,21 +10,24 @@ import "./generator.css";
 
 const Generator = () => {
   return (
-    <div className="generator">
-      <Header />
-      <Palette />
-      <Footer />
-      <img
-        src={Pencil}
-        alt="Background Pencil"
-        className="absoluteImg pencilImg"
-      />
-      <img
-        src={PaletteImg}
-        alt="Background Palette"
-        className="absoluteImg paletteImg"
-      />
-    </div>
+    <>
+      <ToastContainer style={{ fontSize: "1.6rem", textAlign: "center" }} />
+      <div className="generator">
+        <Header />
+        <Palette />
+        <Footer />
+        <img
+          src={Pencil}
+          alt="Background Pencil"
+          className="absoluteImg pencilImg"
+        />
+        <img
+          src={PaletteImg}
+          alt="Background Palette"
+          className="absoluteImg paletteImg"
+        />
+      </div>
+    </>
   );
 };
 

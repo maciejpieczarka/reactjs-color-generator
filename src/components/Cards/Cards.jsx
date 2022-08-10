@@ -10,11 +10,13 @@ const Cards = () => {
   useEffect(() => {
     setColors(HexProvider);
     window.addEventListener("keyup", (e) => {
-      if (e.key === " " || e.code == "Space") {
+      if (e.key === " " || e.code === "Space") {
         setColors(HexProvider);
       }
     });
   }, []);
+
+  
 
   return (
     <>
