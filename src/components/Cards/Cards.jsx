@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import Card from "../Card/Card";
-import HexProvider from "../../utils/HexProvider";
+import { HexProvider } from "../../utils/HexProvider";
 import "./cards.css";
 
 const Cards = () => {
@@ -15,8 +15,6 @@ const Cards = () => {
       }
     });
   }, []);
-
-  
 
   return (
     <>

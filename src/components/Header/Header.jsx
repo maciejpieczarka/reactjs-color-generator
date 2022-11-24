@@ -29,7 +29,7 @@ const Header = () => {
           <ul className="nav-list">
             <li className="nav-item">
               <a
-                href="https://maciejpieczarka.github.io/"
+                href="https://maciejpieczarka.tech/"
                 target="_blank"
                 rel="noreferrer"
               >

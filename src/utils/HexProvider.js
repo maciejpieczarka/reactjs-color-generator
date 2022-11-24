@@ -1,5 +1,5 @@
 // Generating random colors functionality
-const generateHex = () => {
+export const HexProvider = () => {
   const hexSymbols = [
     "0",
     "1",
@@ -32,5 +32,3 @@ const generateHex = () => {
 
   return colorCodes;
 };
-
-export default generateHex;

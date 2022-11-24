@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { toast } from "react-toastify";
 
 import "./card.css";
 
 const Card = ({ color }) => {
-  const [copied, setCopied] = useState(false);
-
   const copy = (color) => {
     toast.success(`Copied color ${color} to clipboard!`, {
       position: "bottom-center",
